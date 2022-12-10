@@ -1,20 +1,54 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: () => import('../views/HomePage/HomePage.vue')
+  },
+
+  {
+    path: '/userInfo/',
+    name: 'userInfo',
+    component: () => import('../views/User/UserInfo.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/shop',
+    name: 'shopPage',
+    component: () => import('../views/Shop/ShopIndex.vue')
+  },
+  {
+    path: '/phone',
+    name: 'phonePage',
+    component: () => import('../views/PhonePage.vue')
+  },
+  {
+    path: '/loginPage',
+    name: 'loginPage',
+    component: () => import('../components/LoginPage.vue')
+  },
+  {
+    path: '/registerPage',
+    name: 'resgisterPage',
+    component: () => import('../components/RegisterPage.vue')
+  },
+  {
+    path: '/myCart',
+    name: 'myCart',
+    component: () => import('../components/MyCart.vue')
+  },
+  {
+    path: '/laptop',
+    name: 'laptopPage',
+    component: () => import('../views/LaptopPage.vue')
+  },
+  {
+    path: '/news',
+    name: 'newsPage',
+    component: () => import('../views/NewsPage.vue')
+  },
+
 ]
 
 const router = createRouter({

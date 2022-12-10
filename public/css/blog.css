@@ -1,0 +1,116 @@
+.blog-header {
+    background-image: url('../img/newsbanner.jpg') !important;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#blog {
+    padding: 100px 100px 0 100px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+    z-index: 2;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 5px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover {
+    color: #088170;
+}
+
+#blog .blog-details a:hover::after {
+    background-color: #088170;
+}
+
+#blog .blog-box h1 {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+}
+
+
+/* Media Query */
+
+@media (max-width:772px) {
+    .blog-header {
+        height: 30vh !important;
+        padding: 10px;
+    }
+    .blog-header h2 {
+        font-size: 40px !important;
+    }
+    .blog-header p {
+        font-size: 20px!important;
+    }
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #blog {
+        padding: 50px 50px 0 50px;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+    #blog img {
+        height: 250px;
+    }
+    #blog .blog-box h1 {
+        top: -40px;
+        font-size: 30px;
+    }
+}
+
+
+/* Media Query End */

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.image {
+    object-fit: cover;
+}
+
+
+/* feacture */
+
+#feacture-box:hover {
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: 10 15px 15px rgba(197, 77, 77, 0.06)
+}
+
+
+/* feacture end */
+
+
+/* category section */
+
+#category-section:hover {
+    cursor: pointer;
+}
+
+
+/* category end */
+
+#hero {
+    background-image: url('../img/ss\ cv.webp');
+    background-size: cover;
+    background-position: top 45% right 0;
+    height: 65vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#mobileHero {
+    background-image: url('../img/oppobanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 20% right 0%;
+    height: 45vh;
+}
+
+#product {
+    border-radius: 0px;
+    border: 1px solid rgba(80, 76, 76, 0.829);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* mobile end */
+
+
+/* laptop start */
+
+#laptopHero {
+    background-image: url('../img/laptop-banner.jpg');
+    background-size: cover;
+    background-position: top 40% right 0;
+    height: 35vh;
+}
+
+
+/* laptop end */
+
+#product:hover {
+    border: 1px dashed black;
+    border-radius: 10px;
+}
